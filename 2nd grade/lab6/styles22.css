@@ -1,0 +1,13 @@
+html {
+  font-size: 150%;
+}
+#one{
+	text-decoration: underline;
+}
+#two{
+	text-decoration: line-through;
+}
+#three{
+	text-decoration: overline;
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<title>№20</title>
+</head>
+
+<body>
+<script>
+function words(number=0)
+{
+  var res =""+number;
+  if (number>=5 & number<=20)
+  {
+  res +=" товаров";
+  return res;
+  }
+  var value = number%10;
+  switch(value)
+{  
+  case 1:
+    res +=" товар";
+	break;
+  case 2:
+    res +=" товара";
+	break;
+  case 3:
+    res +=" товара";
+    break;
+  case 4:
+    res +=" товара";
+    break;
+}
+if (value-5>=0)res +=" товаров";
+return res;
+}
+alert(words(99));
+</script>
+</body>
+</html>

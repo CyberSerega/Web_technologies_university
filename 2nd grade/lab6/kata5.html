@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<title>kata5</title>
+</head>
+
+<body>
+<script>
+titleToNumber('CODEWARS');
+function titleToNumber(str)
+{
+	let res=0;
+	
+	res+=str[str.length-1].charCodeAt(0)-'A'.charCodeAt(0)+1;
+	for(i=0; i<str.length-1; i++)
+	{
+		res+=(str[i].charCodeAt(0)-'A'.charCodeAt(0)+1)*26;
+	}
+	
+	alert(res);
+}
+</script>
+</body>
+</html>

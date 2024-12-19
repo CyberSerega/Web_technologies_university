@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<title>№10</title>
+</head>
+
+<body>
+<script>
+  function Palindrom(str)
+{
+    str = str.replaceAll(" ","");
+	str = str.toLowerCase();    
+    for(let i = 0; i < Math.floor(str.length / 2); i++)
+    {
+       if(str[i] != str[str.length - (i+1)])
+            return false;
+    }
+    return true;
+}
+alert(Palindrom('Аргентина манит негра'));
+
+  </script>
+</body>
+</html>

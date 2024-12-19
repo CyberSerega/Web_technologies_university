@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<title>kata6</title>
+</head>
+
+<body>
+<script>
+maskify("312514235434234161111");
+function maskify(str)
+{
+	var res="";
+	if (str.length<=4)
+	{
+		alert(str);
+		return;
+	}	
+	for(i=0; i<str.length; i++)
+	{
+		if(str.length-i-1>=4) res+="#"
+		else res+=str[i];
+	}
+	
+	alert(res);
+}
+</script>
+</body>
+</html>

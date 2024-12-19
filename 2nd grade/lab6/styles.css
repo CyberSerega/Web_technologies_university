@@ -1,0 +1,116 @@
+html {
+  font-size: 150%;
+}
+/* №1 */
+div p{
+	color:red;
+}
+/* №2 */
+div h2
+{
+	color:green;
+}
+/* №3 */
+#test p{
+	color:orange;
+}
+/* №4 */
+#test h2{
+	color:blue;
+}
+/* №5 */
+.bbb{
+	color:violet;
+}
+/* №6 */
+#test .bbb {
+	color:red;
+}
+/* №7 */
+.bbb p{
+	text-align:center;
+}
+/* №8 */
+.bbb h2{
+	text-align:center;
+}
+/* №9 */
+#test .bbb p {
+	color:red;
+}
+/* №10 */
+.bbb, .xxx {
+	color:red;
+}
+
+/* №11 */
+#test .bbb p, #test .xxx h2 {
+	color:red;
+}
+/* №12 */
+#test .bbb p, #test .xxx p {
+	color:red;
+}
+/* №13 */
+.fff {
+	color:red;
+}
+/* №14 */
+.fff>p {
+	color:red;
+}
+/* №15 */
+.fff p {
+	color:red;
+}
+/* №16 */
+.fff>.bbb {
+	color:red;
+}
+/* №17 */
+.fff>.bbb h2 {
+	color:red;
+}
+/* №18 */
+#test a:link, #test a:visited {
+	color:red;
+	text-decoration: none;
+}
+#test a:hover {
+	color:blue;
+	text-decoration:underline;
+}
+/* №19 */
+a.www:link, a.www:visited {
+	color:blue;
+	text-decoration:underline;
+}
+a.www:hover {
+	text-decoration: none;
+}
+/* №20 */
+#test a.www:link {
+	color:pink;
+	text-decoration: none;
+}
+#test a.www:hover {
+	color:blue;
+	text-decoration:underline;
+}
+#test a.www:visited {
+	color:red;
+	text-decoration:line-through;
+}
+/* №21 */
+.eee a.www:link {
+	color:pink;
+	text-decoration: none;
+}
+.eee a.www:hover {
+	color:blue;
+	text-decoration:underline;
+}
+.eee a.www:visited {
+	color:red;
+	text-decoration:line-through;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<title>kata3</title>
+</head>
+
+<body>
+<input type="text">
+<script>
+let number = document.querySelector('input');
+let sqrt=Math.sqrt(number.value);
+let ost = sqrt - Math.trunc(sqrt);
+if (ost>=0.5) alert(Math.trunc(sqrt)+1)
+else alert(Math.trunc(sqrt));
+</script>
+</body>
+
+</html>

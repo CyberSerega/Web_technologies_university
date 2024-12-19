@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<title>kata3</title>
+</head>
+
+<body>
+<script>
+Func("ABBCCD");
+function Func(str)
+{
+	var symbols=str[0];	
+	var res="";
+	for(i=1; i<str.length; i++)
+	{
+		if(symbols.includes(str[i])) continue;
+		else symbols+=str[i];
+	}	
+	for(i=0; i<symbols.length; i++)
+	{
+		let digit = symbols[i].charCodeAt(0);
+		if(digit==0) continue;
+		else res+=digit+" ";
+	}	
+	
+	alert(res);
+}
+</script>
+</body>
+</html>

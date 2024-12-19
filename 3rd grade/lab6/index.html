@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+<body>
+<form name="search">
+    <input type="text" name="input1" placeholder="123"></input>
+    <input type="text" name="input2" placeholder="in2"></input><br><br>
+    <input type="button" name="button1" onclick="task1()" value="Задача 1"><br><br>
+    <input type="button" name="button2" onclick="task2()" value="Задача 2"><br><br>
+    <input type="button" name="button3" onclick="task3()" value="Задача 3"><br><br>
+    <input type="button" name="button4" onclick="task4()" value="Задача 4"><br><br>
+    <input type="button" name="button5" onclick="task5()" value="Задача 5"><br><br>
+    <input type="button" name="button6" onclick="task6()" value="Задача 6"><br><br>
+    <input type="button" name="button7" onclick="task7()" value="Задача 7"><br><br>
+    <input type="button" name="button8" onclick="task8_Lock()" value="Задача 8 (блокировать)"> <input type="button" name="button8.1" onclick="task8_Unlock()" value="Задача 8 (разблокировать)"><br><br>
+    <input type="button" name="button9" onmouseover="alert('Вы навели на эту кнопку')" value="Задача 9">
+    <input type="button" name="button10" ondblclick="alert('Вы дважды нажали на эту кнопку')" value="Задача 10 (dbclick)"><br><br>
+    <p>Задание 11 (наведи на область)</p>
+    <div id="task11" onmouseover="alert('Вы навели на эту область')"><hr><br><br><hr></div>
+    <input type="button" name="button12" onclick="task12()" value="Задача 12??????"><br><br>
+    <input type="button" name="button13" onclick="task13()" value="Задача 13"><br><br>
+    <input type="button" name="button14" onclick="task14()" value="Задача 14"><br><br>
+    <input type="button" name="button15" onclick="task15()" value="Задача 15"><br><br>
+    <input type="button" name="button16" onclick="task16()" value="Задача 16(кликай много)"><br><br>
+    <input type="button" name="button17" onclick="task17()" value="Задача 17"><br><br>
+    <input type="button" name="button18" onclick="task18()" value="Нажмите, чтобы спрятать текст(задача18)"/>
+    <div id="hide">Текст</div><br>
+    <input type="button" name="button19" onclick="task19()" value="Задача 19"/><br><br>
+    <div id="hide">Калькулятор</div><br>
+    <p>a: <input type="number" id="num1"></p>
+	<p>b: <input type="number" id="num2"></p>
+	<button onclick="sum()">+</button><button onclick="difference()">-</button>
+	<button onclick="multiply()">*</button><button onclick="division()">/</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<title>kata5</title>
+</head>
+
+<body>
+<script>
+let last, today, cycleLength;
+today=new Date();
+last=new Date(2022, 12, 17);
+cycleLength=12;
+Sravni(last, today, cycleLength);
+function Sravni(last, today, cycleLength)
+{
+cycleLength *= 24*60*60*1000;
+if (today-last>cycleLength) alert("Уже поздно")
+else alert("Ещё не поздно");
+}
+
+</script>
+</body>
+
+</html>

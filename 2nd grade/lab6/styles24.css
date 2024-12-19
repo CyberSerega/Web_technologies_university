@@ -1,0 +1,9 @@
+html {
+  font-size: 150%;
+}
+div{
+	height:300px;
+	width:700px;
+	border: solid blue 2px;
+}
+

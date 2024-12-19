@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<title>kata4</title>
+</head>
+
+<body>
+<script>
+Initials('code wars');
+function Initials(name)
+{
+var arr=name.split(' ');
+var i;
+var res="";
+ for(i=0; i<arr.length-1; i++)
+ {
+	res+=arr[i][0].toUpperCase()+'.';
+ }
+ res+=arr[i][0].toUpperCase();
+ for(i=1; i<arr[arr.length-1].length; i++)
+ {
+	res+=arr[arr.length-1][i];
+ }
+ 
+ alert(res);
+}
+</script>
+</body>
+</html>

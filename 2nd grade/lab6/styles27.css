@@ -1,0 +1,13 @@
+html {
+  font-size: 150%;
+}
+#one {
+	color:green;
+}
+#two {
+	color:red;
+}
+#three {
+	color:black;
+	text-decoration:none;
+}

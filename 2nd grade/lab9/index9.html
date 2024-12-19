@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<title>№9</title>
+</head>
+
+<body>
+<script>
+function ToPolish(str)
+{
+    let temp = str.split(' ');
+    let operands = [];
+	let x,y;
+    for(let i = 0; i < temp.length; i++)
+    {
+        switch(temp[i])
+        {
+            case "+":
+                let sum = 0;
+                 x =  operands.pop();
+				 y =  operands.pop();
+                    sum = x+y;
+                operands.push(sum);
+                break;
+            case "-":
+                 x =  operands.pop();
+				 y =  operands.pop();
+                let dif = x-y;
+                operands.push(dif);
+                break;
+            case "*":
+                let mult = 1;
+                 x =  operands.pop();
+				 y =  operands.pop();
+                mult = x*y;
+                operands.push(mult);
+                break;
+            case "/":
+                 x =  operands.pop();
+				 y =  operands.pop();
+				let div =x/y;
+                operands.push(div);
+                break;
+            default:
+                operands.push(parseInt(temp[i]));
+                break;
+        }
+    }
+    return operands.pop();
+}
+ console.log(ToPolish("2 2 + 2 *"));
+</script>
+</body>
+</html>
